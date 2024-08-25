@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Have an account?</h2>
+      <form class="login-form">
+        <input type="text" placeholder="Username" required />
+        <div class="input-container">
+          <input type="password" placeholder="Password" required />
+          <i class="fa fa-eye"></i>
+          <!--use fa fa-eye-slash for ayes with line through-->
+        </div>
+        <button type="submit">SIGN IN</button>
+        <div class="remember-forgot">
+          <div class="remember">
+            <input type="checkbox" name="remember" />
+            <p>Remember Me</p>
+          </div>
+          <a href="#">Forgot Password ?</a>
+        </div>
+        <div class="social-login">
+          <p>— Or Sign In With —</p>
+          <div class="social-btns">
+            <button type="button" class="facebook-btn">Facebook</button>
+            <button type="button" class="twitter-btn">Twitter</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

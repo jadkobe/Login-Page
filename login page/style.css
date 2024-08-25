@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.login-container {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.login-form {
+  padding: 40px;
+  width: 20%;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.login-container h2 {
+  position: relative;
+  z-index: 1;
+}
+
+.login-form input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: rgba(255, 255, 255, 0.5) 2px solid;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  color: white;
+}
+
+.login-form input::placeholder {
+  color: rgb(212, 203, 203);
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.login-form button {
+  background-color: rgb(250, 205, 180);
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+}
+label {
+  display: inline;
+}
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+  padding: 0 10px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(250, 205, 180);
+}
+.remember p {
+  text-wrap: nowrap;
+  margin-left: 10px;
+}
+.remember input {
+  margin-top: 18px;
+}
+.remember-forgot a {
+  text-decoration: none;
+  color: rgb(250, 205, 180);
+}
+.social-login {
+  margin-top: 20px;
+}
+
+.social-login p {
+  margin: 10px 0;
+}
+
+.social-login button {
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-property: background-color, color;
+  transition-duration: 0.5s;
+}
+
+.social-login button:hover {
+  background-color: black;
+  color: white;
+}
+
+.social-btns {
+  display: flex;
+}
+.input-container {
+  position: relative;
+}
+.input-container i {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  font-size: 20px;
+  color: rgb(250, 205, 180);
+  cursor: pointer;
+}
